@@ -1,6 +1,13 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+   <header class="container_info_header">
+        <h1>Blog Joaquín Antonio Custodio Díaz</h1>
+        <p>Visita mi perfil de <a href="https://github.com/GoakingFy">Github</a> 😀</p>
+        <p>Ver el codigo del <a href="https://github.com/GoakingFy/blog-django">Blog</a> 💻</p>
+        
+   </header>
+   <h2 class="h2_lasts_posts">Ultimos posts</h2>
     {% for post in posts %}
         <div class="post">
             <div class="date">

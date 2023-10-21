@@ -15,18 +15,34 @@
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/search.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="{% static 'css/blog.css' %}" />
   </head>
   <body>
     <body>
-      <div class="page-header">
-        <h1><a href="/">Django Girls Blog</a></h1>
+      <nav>
+        <h1><a href="/">Goaking Blog</a></h1>
+        <form action="" method="get">
+          <input id="inp_search" type="text" placeholder="Buscar post..." />
+          <label for="inp_search"><i class="gg-search"></i></label>
+        </form>
+
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre mi</a></li>
+          <li><a href="#">Tutorial Django</a></li>
+          <li><a href="#">Github</a></li>
+          <li>
+            <a target="_blank" class="btn_panel_admin" href="{% url 'admin:index' %}">Panel Admin</a>
+          </li>
+        </ul>
         {% if user.is_authenticated %}
-        <a href="{% url 'post_new' %}" class="top-menu"
-          ><span class="glyphicon glyphicon-plus"></span
-        ></a>
+        <a class="new_post" href="{% url 'post_new' %}"> Crear post <span class="glyphicon glyphicon-plus"></span></a>
         {% endif %}
-      </div>
+      </nav>
       <div class="content container">
         <div class="row">
           <div class="col-md-8">{% block content %} {% endblock %}</div>
