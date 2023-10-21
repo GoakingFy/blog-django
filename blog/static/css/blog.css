@@ -111,6 +111,7 @@ input:focus{
 
 h1{
     margin: 0;
+   
 }
 
 .container_info_header{
@@ -210,4 +211,8 @@ h1{
 
 .not_result{
     color: #fff;
+}
+
+.title_h1_blog{
+    color: #f9b44d !important;
 }
