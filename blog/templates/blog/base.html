@@ -25,16 +25,17 @@
     <body>
       <nav>
         <h1><a href="/">Goaking Blog</a></h1>
-        <form action="" method="get">
-          <input id="inp_search" type="text" placeholder="Buscar post..." />
-          <label for="inp_search"><i class="gg-search"></i></label>
+        <form action="{% url 'post_search' %}" method="get">
+          <input id="inp_search" type="text" placeholder="Buscar post..." name="buscar_post" />
+          <label for="btn_search"><i class="gg-search"></i></label>
+          <button id="btn_search" ></button>
         </form>
 
         <ul>
-          <li><a href="#">Inicio</a></li>
+          <li><a href="/">Inicio</a></li>
           <li><a href="#">Sobre mi</a></li>
-          <li><a href="#">Tutorial Django</a></li>
-          <li><a href="#">Github</a></li>
+          <li><a  target="_blank" href="https://tutorial.djangogirls.org/es/">Tutorial Django</a></li>
+          <li><a target="_blank" href="https://github.com/GoakingFy">Github</a></li>
           <li>
             <a target="_blank" class="btn_panel_admin" href="{% url 'admin:index' %}">Panel Admin</a>
           </li>
