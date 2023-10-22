@@ -8,13 +8,11 @@ Acerca del Proyecto:
 
 Tecnología Principal: Django
 Objetivo: Aprender y aplicar los fundamentos de Django para desarrollar aplicaciones web.
-Contenido: Aquí encontrarás artículos, tutoriales y reflexiones sobre nuestro viaje de aprendizaje en el mundo de Django y el desarrollo web.
 Características Destacadas:
 
-Posts Dinámicos: Publicamos regularmente artículos sobre diversos temas relacionados con Django y el desarrollo web.
-Comentarios: ¡Anímate a dejar tus comentarios y unirte a la conversación!
+Posts Dinámicos
 Búsqueda Avanzada: Encuentra fácilmente el contenido que te interesa.
-Fácil Navegación: Explora de manera intuitiva nuestro blog y accede a los artículos que te interesen con facilidad.
+Fácil Navegación: Explora de manera intuitiva y accede a los artículos que te interesen con facilidad.
 
 
 ## Captura
